@@ -3,10 +3,10 @@
 abaixo segue alguns problemas de algoritimos indicando a entrada e a saida desejada dos códigos
 
 ### fizzbuzz
-<p>faça um algoritimo que imprima de 1 a 100</p>
-<p>se o número for divisível por 3 imprima  **fizz**</p>
-<p>se o número for divísivel por 5 imprima  **buzz**</p>
-<p>se o número for divisível por 3 e 5 imprima **fizzbuz**</p>
+- faça um algoritimo que imprima de 1 a 100
+- se o número for divisível por 3 imprima  **fizz**
+- se o número for divísivel por 5 imprima  **buzz**
+- se o número for divisível por 3 e 5 imprima **fizzbuz**
 
 ## Tarefas
 - [x] fizzbuzz
