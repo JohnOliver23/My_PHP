@@ -1,5 +1,5 @@
 # First codes
-essa pasta tem o propósito da resolução de alguns problemas de algoritimos usando a linguagem PHP,
+> essa pasta tem o propósito da resolução de alguns problemas de algoritimos usando a linguagem PHP,
 abaixo segue alguns problemas de algoritimos indicando a entrada e a saida desejada dos códigos
 
 ### fizzbuzz
