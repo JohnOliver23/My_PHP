@@ -7,12 +7,65 @@ abaixo segue alguns problemas de algoritimos indicando a entrada e a saida desej
 - se o número for divisível por 3 imprima  **fizz**
 - se o número for divísivel por 5 imprima  **buzz**
 - se o número for divisível por 3 e 5 imprima **fizzbuz**
+### palindromo
+desenvolva uma função  que verifique se uma frase ou palavra é palindromo , ou seja, que se pode ler, indiferentemente, da esquerda para a direita ou vice-versa. Caso seja, o retorno dessa função dve retornar **yes**, caso o contrário, a função deve retornar **no**.
+```php
+echo isPalindromo("cascata")//=> no
+echo isPalindromo("natan")//=> yes
+```
+### qtdAnswers
+desenvolva uma função que receba como primeiro parâmetro um array de notas e segundo parâmetro a posição de uma nota qualquer, a função deve retornar a quantidade de notas que seja maior ou igual à nota que está na posição informada.
+```php
+echo verificQtdAnswers([10,9,7,7,5], 3);//=> 4;
+echo verificQtdAnswers([10,9,7,7,5], 2);//=> 2;
+```
+### wordRepeat
+desenvolva uma função que verifique se uma frase contém palavras repitidas, caso contenha, a função deve retornar **yes**, caso ao contrário, a função deve retornar **no**.
+```php
+echo verificRepeat("Não estar chovendo");//=> no
+echo verificRepeat("Não estar chovendo não");//=> yes
+```
+### hamming
+Uma mutação é simplesmente um erro que ocorre durante a criação ou cópia de um ácido nucleico, em particula de DNA, Porque os ácidos nucléicos são vitais para as funções celulares, as mutações tendem a causar um efeito cascata em toda a célula. Embora as mutações sejam tecnicamente erros, Uma mutação rara pode equipar a célula com um atributo benéfico. O tipo mais simples e mais comum de mutação de ácido nucléico é um ponto mutação, que substitui uma base por outra em um único nucleotídeo. Contando o número de diferenças entre duas cadeias de DNA homólogas tomadas de diferentes genomas com um ancestral comum, obtemos uma medida de o número mínimo de mutações pontuais que poderiam ter ocorrido no caminho evolutivo entre as duas vertentes. Isso é chamado de **"distância de Hamming"**. É encontrado comparando duas cadeias de DNA e contando quantas das nucleotídeos são diferentes do seu equivalente na outra cadeia. Com base nessas informações, desenvolva uma função que calcule a diferença de **Hamming** entre duas cadeias de DNA, afunção deve retornar uma mensagem informando incompatibilidade de comparação caso as duas cadeia não possuirem o mesmo tamanho.
+```php
+echo distance('A', 'A');//=> 0
+echo distance('A', 'G'));//=> 1
+echo distance('AG', 'CT'));//=> 2
+echo distance('AT', 'CT'));//=> 1
+echo distance('GGACG', 'GGTCG'));//=> 1
+echo distance('GATACA', 'GCATAA'));//=> 4
+echo distance('GGACGGATTCTG', 'AGGACGGATTCT'));//=>9
+echo distance('GGACG', 'AGGACGTGG');//=> DNA strands must be of equal length
+```
+### RNA Transcription
+As cadeias de DNA e RNA são uma sequência de nucleotídeos. Os quatro nucleotídeos encontrados no DNA são adenina (**A**), citosina (**C**),guanina (**G**) e timina (**T**). Os quatro nucleotídeos encontrados no RNA são adenina (**A**), citosina (**C**),guanina (**G**) e uracilo (**U**).Dada uma fita de DNA, sua fita de RNA transcrita é formada substituindo cada nucleotídeo com seu complemento:
+- G -> C
+- C -> G
+- T -> A
+- A -> U
+```php
+echo toRna('C'));//=> G
+echo toRna('G'));//=> C
+echo toRna('T'));//=> A
+echo toRna('A'));//=> U
+echo toRna('ACGTGGTCTTAA'));//=>UGCACCAGAAUU
+```
+### Nucleotide Count
+A linguagem genética de todos os seres vivos do planeta é o DNA. O DNA é uma molécula grande que é construída a partir de uma sequência extremamente longa de elementos individuais chamados nucleotídeos. 4 tipos existem no DNA e diferem apenas ligeiramente e podem ser representados como os seguintes símbolos: '**A**' para adenina, '**C**' para citosina, '**G**' para guanina e '**T**' timina. Com base nessas informações, calcule quantas vezes cada nucleotídeo ocorre na string.
+```php
+  echo nucleotideCount('');//=>['a' => 0, 'c' => 0, 't' => 0, 'g' => 0]
+  echo nucleotideCount('AAAAAAAAA')//=> ['a' => 9, 'c' => 0, 't' => 0, 'g' => 0]
+  echo nucleotideCount('AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC'));//=>['a' => 20, 'c' => 12, 't' => 21, 'g' => 17]    
+```
 
 ## Tarefas
 - [x] fizzbuzz
 - [x] palindromo
 - [x] qtdAnswers
 - [x] wordRepeat
+- [ ] hamming
+- [ ] RNA Transcription
+- [ ] Nucleotide Count
 - [ ] hashCode
 
 
