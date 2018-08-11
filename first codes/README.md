@@ -57,6 +57,35 @@ A linguagem genética de todos os seres vivos do planeta é o DNA. O DNA é uma 
   echo nucleotideCount('AAAAAAAAA')//=> ['a' => 9, 'c' => 0, 't' => 0, 'g' => 0]
   echo nucleotideCount('AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC'));//=>['a' => 20, 'c' => 12, 't' => 21, 'g' => 17]    
 ```
+### Difference of Squares
+Encontre a diferença entre o quadrado da soma e a soma dos quadrados dos primeiros N números naturais.
+
+O quadrado da soma dos dez primeiros números naturais é :
+
+**(1 + 2 + ... + 10) ² = 55² = 3025.**
+
+A soma dos quadrados dos dez primeiros números naturais é :
+
+**1² + 2² + ... + 10² = 385.*
+
+Daí a diferença entre o quadrado da soma dos primeiros dez números naturais e a soma dos quadrados dos dez primeiros
+números naturais é :
+
+**3025 - 385 = 2640.**
+
+```php
+echo squareOfSums(5));//=> 225
+echo sumOfSquares(5);//=> 55
+echo difference(5);//=> 170
+echo squareOfSums(10);//=> 3025
+echo sumOfSquares(10);//=> 385
+echo difference(10);//=> 2640
+echo squareOfSums(100);//=> 25502500
+echo sumOfSquares(100);//=> 338350
+echo difference(100);//=> 25164150
+```
+
+
 
 ## Tarefas
 - [x] fizzbuzz
@@ -66,6 +95,7 @@ A linguagem genética de todos os seres vivos do planeta é o DNA. O DNA é uma 
 - [ ] hamming
 - [ ] RNA Transcription
 - [ ] Nucleotide Count
+- [ ] Difference of Squares
 - [ ] hashCode
 
 
