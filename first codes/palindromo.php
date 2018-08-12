@@ -7,5 +7,6 @@ function isPalindromo($word){
 		return "no";
 	}
 }
-echo isPalindromo("baroia")
+echo isPalindromo("cascata")//=> no
+echo isPalindromo("natan")//=> yes
 ?>
