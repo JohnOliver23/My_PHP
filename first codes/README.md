@@ -84,6 +84,52 @@ echo squareOfSums(100);//=> 25502500
 echo sumOfSquares(100);//=> 338350
 echo difference(100);//=> 25164150
 ```
+### Atbash Cipher
+A cifra Atbash é uma simples cifra de substituição que transpõe todas as letras do alfabeto para que o resultado do alfabeto esteja de trás para a frente. A primeira letra é substituída pela última, a segunda com a penúltima e assim por diante.
+
+Uma cifra de Atbash para o alfabeto latino seria a seguinte:
+
+> Simples: abcdefghijklmnopqrstuvwxyz
+
+> Cifra: zyxwvutsrqponmlkjihgfedcba
+
+É uma cifra muito fraca porque tem apenas uma chave possível, e é uma simples cifra de substituição monoalfabética. O texto cifrado é escrito em grupos de tamanho fixo, o tamanho do grupo tradicionalsendo 5 letras e a pontuação é excluída. Isso é para tornar mais difícil adivinhar.
+
+**Exemplos**
+- **test** de codificação dá **gvhg**
+- Decodificação **gvhg** dá **test**
+
+```php
+echo encode('no');//=> ml
+echo encode('yes');//=> bvh
+echo encode('OMG');//=> lnt
+echo encode('O M G');//=> lnt
+echo encode('mindblowingly');//=> nrmwy oldrm tob
+echo encode('Testing, 1 2 3, testing.');//=> gvhgr mt123 gvhgr mt
+echo encode('Truth is fiction.');//=> gifgs rhurx grlm
+```
+### Word Count
+Dada uma frase, conte as ocorrências de cada palavra nessa frase. Por exemplo, para a entrada  **"olly olly in come free"**:
+
+> olly: 2
+
+> in: 1
+
+> come: 1
+
+> free: 1
+```php
+echo wordCount('word');//=> ['word' => 1]
+echo wordCount('one of each');//=> ['one' => 1, 'of' => 1, 'each' => 1]
+echo  wordCount('one fish two fish red fish blue fish');//=> ['one' => 1, 'fish' => 4, 'two' => 1, 'red' => 1, 'blue' => 1]
+echo wordCount('car : carpet as java : javascript!!&@$%^&');//=> ['car' => 1, 'carpet' => 1, 'as' => 1, 'java' => 1, 'javascript' => 1]
+echo wordCount('testing, 1, 2 testing');//=> ['1' => 1, '2' => 1, 'testing' => 2]
+echo wordCount('go Go GO Stop stop');//=> ['go' => 3, 'stop' => 2]
+echo wordCount("hello\nworld");//=> ['hello' => 1, 'world' => 1]
+echo wordCount("hello\tworld");//=> ['hello' => 1, 'world' => 1]
+echo wordCount('hello  world');//=> ['hello' => 1, 'world' => 1]
+echo wordCount("\t\tIntroductory Course      ");//=> ['introductory' => 1, 'course' => 1]
+```
 
 
 
@@ -96,6 +142,7 @@ echo difference(100);//=> 25164150
 - [ ] RNA Transcription
 - [ ] Nucleotide Count
 - [ ] Difference of Squares
-- [ ] hashCode
+- [ ] Atbash Cipher
+- [ ] Word Count
 
 
