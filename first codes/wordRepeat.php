@@ -10,5 +10,7 @@
 		}
 		return "no";
 	}
-	echo verificRepeat("Nao esta chovendo nao");
+	echo verificRepeat("Não estar chovendo");//=> no
+	echo "<br>";
+ 	echo verificRepeat("Não estar chovendo não");//=> yes
 ?>
