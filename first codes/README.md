@@ -121,7 +121,7 @@ Dada uma frase, conte as ocorrências de cada palavra nessa frase. Por exemplo, 
 ```php
 echo wordCount('word');//=> ['word' => 1]
 echo wordCount('one of each');//=> ['one' => 1, 'of' => 1, 'each' => 1]
-echo  wordCount('one fish two fish red fish blue fish');//=> ['one' => 1, 'fish' => 4, 'two' => 1, 'red' => 1, 'blue' => 1]
+echo wordCount('one fish two fish red fish blue fish');//=> ['one' => 1, 'fish' => 4, 'two' => 1, 'red' => 1, 'blue' => 1]
 echo wordCount('car : carpet as java : javascript!!&@$%^&');//=> ['car' => 1, 'carpet' => 1, 'as' => 1, 'java' => 1, 'javascript' => 1]
 echo wordCount('testing, 1, 2 testing');//=> ['1' => 1, '2' => 1, 'testing' => 2]
 echo wordCount('go Go GO Stop stop');//=> ['go' => 3, 'stop' => 2]
