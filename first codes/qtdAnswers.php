@@ -1,6 +1,4 @@
 <?PHP
-$n = 5;
-$values = [10,9,7,7,5];
 
 function verificQtdAnswers($array, $position){
 $limit = $array[$position -1];
@@ -9,7 +7,9 @@ $answers = array_filter($array,function($x) use($limit){
 });
 	return sizeof($answers);
 }
-echo verificQtdAnswers($values, 2);
+echo verificQtdAnswers([10,9,7,7,5], 3);//=> 4;
+echo "<br>";
+echo verificQtdAnswers([10,9,7,7,5], 2);//=> 2;
 
 
 ?>
