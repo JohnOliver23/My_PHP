@@ -138,11 +138,9 @@ echo wordCount("\t\tIntroductory Course      ");//=> ['introductory' => 1, 'cour
 - [x] palindromo
 - [x] qtdAnswers
 - [x] wordRepeat
-- [ ] hamming
-- [ ] RNA Transcription
+- [x] hamming
+- [x] RNA Transcription
 - [ ] Nucleotide Count
 - [ ] Difference of Squares
 - [ ] Atbash Cipher
 - [ ] Word Count
-
-
