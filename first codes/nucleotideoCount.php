@@ -7,11 +7,9 @@
   		"T"=>0,
   		"G"=>0
   	];
-  	if(strlen($word)==0)
-  		return $nucleotideo;
-
   	foreach (str_split($word) as $key => $value) {
-  		$nucleotideo[$value]+=1;
+  		if(array_key_exists($value, $nucleotideo))
+  			$nucleotideo[$value]+=1;
   	}
   	return $nucleotideo;
   }
