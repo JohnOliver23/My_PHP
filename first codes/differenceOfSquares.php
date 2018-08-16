@@ -14,12 +14,17 @@ function sumOfSquares($number){
 	return $count;
 }
 
+function difference($number){
+	return squareOfSums($number) - sumOfSquares($number);
+}
+
 
 echo squareOfSums(5);//=> 225
 echo "<br>";
 echo sumOfSquares(5);//=> 55
-/*
+echo "<br>";
 echo difference(5);//=> 170
+/*
 echo squareOfSums(10);//=> 3025
 echo sumOfSquares(10);//=> 385
 echo difference(10);//=> 2640
