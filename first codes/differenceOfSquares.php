@@ -24,13 +24,18 @@ echo "<br>";
 echo sumOfSquares(5);//=> 55
 echo "<br>";
 echo difference(5);//=> 170
-/*
+echo "<br>";
 echo squareOfSums(10);//=> 3025
+echo "<br>";
 echo sumOfSquares(10);//=> 385
+echo "<br>";
 echo difference(10);//=> 2640
+echo "<br>";
 echo squareOfSums(100);//=> 25502500
+echo "<br>";
 echo sumOfSquares(100);//=> 338350
+echo "<br>";
 echo difference(100);//=> 25164150
-*/
+
 
 ?>
