@@ -1,0 +1,9 @@
+John;Estagiario;
+Daniel;Gerente;
+Diogo;Desenvolvedor;
+Thiago;Desenvolvedor;
+Raphael;Desenvolvedor;
+Ronaldo;Estagiario;
+Gustavo;Estagiario;
+Marcos;infra Estrutura;
+Joao Mario;Designer;
