@@ -1,4 +1,4 @@
-John;Estagiario;
+John Oliver;Estagiario;
 Daniel;Gerente;
 Diogo;Desenvolvedor;
 Thiago;Desenvolvedor;
