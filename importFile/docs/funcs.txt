@@ -1,4 +1,3 @@
-John Oliver;Desenvolvedor;
 Daniel;Gerente;
 Diogo;Desenvolvedor;
 Thiago;Desenvolvedor;
@@ -6,4 +5,5 @@ Raphael;Desenvolvedor;
 Ronaldo;Estagiario;
 Gustavo;Estagiario;
 Marcos;infra Estrutura;
-Allan;Gerente;
+Joao Mario;Designer;
+John Oliver;Estagiario;

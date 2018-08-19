@@ -1,6 +1,7 @@
 body{
-    width: 600px;
-    margin-left: 30%; 
+    width: 800px;
+    margin-left: 25%; 
+    margin-top: 10%;
 }
 
 .fa{
@@ -19,10 +20,27 @@ button {
 .gridform{
     display: flex;
     flex-direction: row;
-    margin-top: 10%;
     justify-content: space-between;
+    margin-bottom: -2.5%;
 }
 .btn.btn-primary{
-    height: 40px;
-    margin-top: 5%;
+    height: 33px;
+    margin-bottom: 1%;
+}
+.gridform h3{
+   margin-top: -0%;
+}
+.table{
+    margin-top: 0.5%;
+}
+span.newname{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+span.newfuncao{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+h3{
+    font-weight: 700;
 }

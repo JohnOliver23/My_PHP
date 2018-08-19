@@ -17,9 +17,22 @@ if(isset($_GET['campoTxt'])){
   editRow($nome, $funcao, $indice);
   
 }
-if(isset($_GET['adicionar'])){
-  adicionar();
+
+if(isset($_GET['newCampoTxt'])){
+  $newnome = $_GET['newCampoTxt'];
+  $newfuncao = $_GET['newCampoFuncao'];
+  if($newnome =="" && $newfuncao ==""){
+    echo "<script>alert('Nome e Função inválidos. Por Favor, Digite um Nome e uma Função');</script>";
+  }else if($newnome==""){
+    echo "<script>alert('Nome inválido. Por Favor, Digite um Nome');</script>";
+  }else if($newfuncao ==""){
+    echo "<script>alert('Função inválida. Por Favor, Digite uma função');</script>";
+  }else{
+    adicionar($newnome, $newfuncao);
+  }
+  
 }
+
 function editRow($newnome, $newfuncao, $indice){
   $arq = file('docs/funcs.txt');//ler as linhas do arquivo como um vetor de linhas
   foreach ($arq as $key => $value) {//ler linha por linha
@@ -47,26 +60,26 @@ function deleteRow($chave){
   }
   fclose($arq2);
 }
-function adicionar(){
+function adicionar($nome, $funcao){
   $arq = file('docs/funcs.txt');//ler as linhas do arquivo como um vetor de linhas
-  array_push($arq, "config;config;\n");
+  array_push($arq, "$nome;$funcao;\n");
   $arq2 = fopen('docs/funcs.txt','w');
   foreach ($arq as $key => $value) {
     fwrite($arq2, $value);
   }
   fclose($arq2);
-  
 }
 ?>
 <body>
 <div class="gridform">
-<h3> Funcionários</h3>
+<div clas="titulo"> <h3> Funcionários</h3> </div>
 <form method="get">
-<input type="hidden" name="adicionar" value='add'>
+<span class="newname">Nome:</span> <input type="text" name="newCampoTxt"></input>
+<span class ="newfuncao">Função:</span> <input type="text" name="newCampoFuncao"></input>
 <button type="submit" class="btn btn-primary">Adicionar</button>
 </form>
 </div>
-<table class="table">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">Nome</th>
