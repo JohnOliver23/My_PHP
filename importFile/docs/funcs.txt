@@ -6,4 +6,4 @@ Ronaldo;Estagiario;
 Gustavo;Estagiario;
 Marcos;infra Estrutura;
 Joao Mario;Designer;
-John Oliver;Estagiario;
+John;Estagiario;

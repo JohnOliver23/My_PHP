@@ -14,7 +14,15 @@ if(isset($_GET['campoTxt'])){
   $nome = $_GET['campoTxt'];
   $funcao = $_GET['campoFuncao'];
   $indice = $_GET['indice'];
-  editRow($nome, $funcao, $indice);
+  if($nome =="" && $funcao ==""){
+    echo "<script>alert('Nome e Função inválidos. Por Favor, Digite um Nome e uma Função');</script>";
+  }else if($nome==""){
+    echo "<script>alert('Nome inválido. Por Favor, Digite um Nome');</script>";
+  }else if($funcao ==""){
+    echo "<script>alert('Função inválida. Por Favor, Digite uma função');</script>";
+  }else{
+    editRow($nome, $funcao, $indice);
+  }
   
 }
 
