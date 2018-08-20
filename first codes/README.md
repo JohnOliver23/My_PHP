@@ -142,5 +142,5 @@ echo wordCount("\t\tIntroductory Course      ");//=> ['introductory' => 1, 'cour
 - [x] RNA Transcription
 - [x] Nucleotide Count
 - [x] Difference of Squares
-- [ ] Atbash Cipher
+- [x] Atbash Cipher
 - [ ] Word Count
