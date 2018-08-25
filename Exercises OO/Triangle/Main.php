@@ -1,0 +1,52 @@
+<?php
+include 'Triangle.php';
+
+echo "Testing One=> ";
+$t = new Triangle(2, 2, 2);
+echo $t->kind()."<br>";//=> equilateral
+echo "Testing Two=> ";
+$t = new Triangle(10, 10, 10);
+echo $t->kind()."<br>";//=> equilateral
+echo "Testing Three=> ";
+$t = new Triangle(3, 4, 4);
+echo $t->kind()."<br>";//=> isosceles
+echo "Testing Four=> ";
+$t = new Triangle(4, 3, 4);
+echo $t->kind()."<br>";//=> isosceles
+echo "Testing Five=> ";
+$t = new Triangle(4, 4, 3);
+echo $t->kind()."<br>";//=> isosceles
+echo "Testing Six=> ";
+$t = new Triangle(4, 4, 7);
+echo $t->kind()."<br>";//=> isosceles
+echo "Testing Seven=> ";
+$t = new Triangle(3, 4, 5);
+echo $t->kind()."<br>";//=> scalene
+echo "Testing Eight=> ";
+$t = new Triangle(5, 4, 6);
+echo $t->kind()."<br>";//=> scalene
+echo "Testing Nine=> ";
+$t = new Triangle(10, 11, 12);
+echo $t->kind()."<br>";//=> scalene
+echo "Testing Ten=> ";
+$t = new Triangle(5, 4, 2);
+echo $t->kind()."<br>";//=> scalene
+echo "Testing Eleven=> ";
+$t = new Triangle(0.4, 0.6, 0.3);
+echo $t->kind()."<br>";//=> scalene
+echo "Testing Twelve=> ";
+$t = new Triangle(0, 0, 0);
+echo $t->kind()."<br>";//=> Triangle sides length should be positive
+echo "Testing Thirteen=> ";
+$t = new Triangle(1, 1, 3);
+echo $t->kind()."<br>";//=> Violating Triangle inequality
+echo "Testing Fourteen=> ";
+$t = new Triangle(7, 3, 2);
+echo $t->kind()."<br>";//=> Violating Triangle inequality
+echo "Testing Fifteen=> ";
+$t = new Triangle(1, 1, 3);
+echo $t->kind()."<br>";//=> Violating Triangle inequality
+echo "Testing Sixteen=> ";
+$t = new Triangle(1, 3, 1);
+echo $t->kind()."<br>";//=> Violating Triangle inequality
+?>
