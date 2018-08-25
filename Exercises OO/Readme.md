@@ -239,8 +239,8 @@ $song->verse(-1);//=>Invalid Parameter
 
 ```
 ### Answers
-[x] Triangle
-[ ] Bob
-[ ] Grade School
-[ ] Largest Series Products
-[x] Beer Song
+- [x] Triangle
+- [ ] Bob
+- [ ] Grade School
+- [ ] Largest Series Products
+- [x] Beer Song
