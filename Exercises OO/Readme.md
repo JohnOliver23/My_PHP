@@ -50,9 +50,7 @@ Bob is a lackadaisical teenager. In conversation, his responses are very limited
 The commented tests at the bottom of the bob_test.php are **Stretch Goals**, they are optional. They may be easier to solve if you are using the mb_string functions, which aren't installed by default with every version of PHP.
 
 ```php
-
-$bob = new Bob;
-
+$bob = new Bob();
 echo $bob->respondTo("Tom-ay-to, tom-aaaah-to.");//=>Whatever.
 echo $bob->respondTo("WATCH OUT!");//=> Whoa, chill out!
 echo $bob->respondTo("FCECDFCAAB");//=> Whoa, chill out!
@@ -69,7 +67,7 @@ echo $bob->respondTo("I HATE YOU");//=> Whoa, chill out!
 echo $bob->respondTo("Ending with ? means a question.");//=> Whatever.
 echo $bob->respondTo(":) ?");//=> Sure.
 echo $bob->respondTo("Wait! Hang on. Are you going to be OK?");//=> Sure.
-echo $->bob->respondTo("");//=> Fine. Be that way!
+echo $bob->respondTo("");//=> Fine. Be that way!
 echo $bob->respondTo("         ");//=> Fine. Be that way!
 echo $bob->respondTo("\t\t\t\t\t\t\t\t\t\t");//=> Fine. Be that way!
 echo $bob->respondTo("\nDoes this cryogenic chamber make me look fat?\nno");//=> Whatever.
@@ -244,16 +242,8 @@ $song->verse(-1);//=>Invalid Parameter
 
 ```
 ### Answers
-<<<<<<< HEAD
 [x] Triangle
-[ ] Bob
+[x] Bob
 [x] Grade School
 [ ] Largest Series Products
 [x] Beer Song
-=======
-- [x] Triangle
-- [ ] Bob
-- [ ] Grade School
-- [ ] Largest Series Products
-- [x] Beer Song
->>>>>>> 639bb6bcbd7b9c980d77a3b7a2099888067cc119
