@@ -130,8 +130,31 @@ echo wordCount("hello\tworld");//=> ['hello' => 1, 'world' => 1]
 echo wordCount('hello  world');//=> ['hello' => 1, 'world' => 1]
 echo wordCount("\t\tIntroductory Course      ");//=> ['introductory' => 1, 'course' => 1]
 ```
+### Run Length Encoding
+Implement run-length encoding and decoding.
 
+Run-length encoding (RLE) is a simple form of data compression, where runs (consecutive data elements) are replaced by just one data value and count.
 
+For example we can represent the original 53 characters with only 13.
+```php
+"WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB"  ->  "12WB12W3B24WB"
+```
+RLE allows the original data to be perfectly reconstructed from the compressed data, which makes it a lossless data compression.
+```php
+"AABCCCDEEEE"  ->  "2AB3CD4E"  ->  "AABCCCDEEEE"
+```
+
+```php
+echo encode('');//=> ''
+echo encode('XYZ');//=> 'XYZ'
+echo decode('');//=> ''
+echo decode('XYZ');//=> XYZ'
+echo encode('AABBBCCCC');//=> '2A3B4C'
+echo decode('2A3B4C');//=> 'AABBBCCCC'
+echo decode('12WB12W3B24WB');//=> 'WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB'
+echo decode('2 hs2q q2w2 ');//=>  '  hsqq qww  '
+echo decode(encode('zzz ZZ  zZ');//=> 'zzz ZZ  zZ'
+```
 
 ## Tarefas
 - [x] fizzbuzz
@@ -144,3 +167,4 @@ echo wordCount("\t\tIntroductory Course      ");//=> ['introductory' => 1, 'cour
 - [x] Difference of Squares
 - [x] Atbash Cipher
 - [x] Word Count
+- [ ] Run Length Encoding
