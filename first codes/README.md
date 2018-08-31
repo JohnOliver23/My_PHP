@@ -167,4 +167,4 @@ echo decode(encode('zzz ZZ  zZ');//=> 'zzz ZZ  zZ'
 - [x] Difference of Squares
 - [x] Atbash Cipher
 - [x] Word Count
-- [ ] Run Length Encoding
+- [x] Run Length Encoding
