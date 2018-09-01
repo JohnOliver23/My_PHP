@@ -230,4 +230,4 @@ raindrops(12121);//=> "12121"
 - [x] Word Count
 - [x] Run Length Encoding
 - [x] Isogram
-- [ ] Raindrops
+- [x] Raindrops
