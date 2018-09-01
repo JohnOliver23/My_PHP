@@ -182,6 +182,41 @@ echo isIsogram('Emily Jung Schwartzkopf');//=> true
 echo isIsogram('elephant');//=> false
 
 ```
+### Raindrops
+Convert a number to a string, the contents of which depend on the number's factors.
+
+- If the number has 3 as a factor, output 'Pling'.
+- If the number has 5 as a factor, output 'Plang'.
+- If the number has 7 as a factor, output 'Plong'.
+- If the number does not have 3, 5, or 7 as a factor, just pass the number's digits straight through.
+
+Examples
+
+* 28's factors are 1, 2, 4, **7**, 14, 28.
+  * In raindrop-speak, this would be a simple "Plong".
+* 30's factors are 1, 2, **3**, **5**, 6, 10, 15, 30.
+  * In raindrop-speak, this would be a "PlingPlang".
+* 34 has four factors: 1, 2, 17, and 34.
+  * In raindrop-speak, this would be "34".
+
+```php
+raindrops(1);//=> "1"
+raindrops(3);//=> "Pling"
+raindrops(5);//=> "Plang"
+raindrops(7);//=> "Plong"
+raindrops(6);//=> "Pling"
+raindrops(9);//=> "Pling"
+raindrops(10);//=> "Plang"
+raindrops(14);//=> "Plong"
+raindrops(15);//=> "PlingPlang"
+raindrops(21);//=> "PlingPlong"
+raindrops(25);//=> "Plang"
+raindrops(35);//=> "PlangPlong"
+raindrops(49);//=> "Plong"
+raindrops(52);//=> "52"
+raindrops(105);//=> "PlingPlangPlong"
+raindrops(12121);//=> "12121" 
+```
 ## Tarefas
 - [x] fizzbuzz
 - [x] palindromo
@@ -194,4 +229,5 @@ echo isIsogram('elephant');//=> false
 - [x] Atbash Cipher
 - [x] Word Count
 - [x] Run Length Encoding
-- [ ] Isogram
+- [x] Isogram
+- [ ] Raindrops
