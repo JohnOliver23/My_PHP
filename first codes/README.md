@@ -155,7 +155,33 @@ echo decode('12WB12W3B24WB');//=> 'WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWW
 echo decode('2 hs2q q2w2 ');//=>  '  hsqq qww  '
 echo decode(encode('zzz ZZ  zZ');//=> 'zzz ZZ  zZ'
 ```
+### Isogram
+Determine if a word or phrase is an isogram.
 
+An isogram (also known as a "nonpattern word") is a word or phrase without a repeating letter, however spaces and hyphens are allowed to appear multiple times.
+
+Examples of isograms:
+
+- lumberjacks
+- background
+- downstream
+- six-year-old
+
+The word isograms, however, is not an isogram, because the s repeats.
+
+```php
+echo isIsogram('duplicates');//=> true
+echo (isIsogram('eleven');//=> false
+echo isIsogram('subdermatoglyphic');//=> true
+echo isIsogram('Alphabet');//=> false
+echo isIsogram('thumbscrew-japingly');//=> true
+echo isIsogram('Hjelmqvist-Gryb-Zock-Pfund-Wax');//=> true
+echo isIsogram('Heizölrückstoßabdämpfung');//=> true
+echo isIsogram('the quick brown fox');//=> false
+echo isIsogram('Emily Jung Schwartzkopf');//=> true
+echo isIsogram('éléphant');//=> false
+
+```
 ## Tarefas
 - [x] fizzbuzz
 - [x] palindromo
@@ -168,3 +194,4 @@ echo decode(encode('zzz ZZ  zZ');//=> 'zzz ZZ  zZ'
 - [x] Atbash Cipher
 - [x] Word Count
 - [x] Run Length Encoding
+- [ ] Isogram
