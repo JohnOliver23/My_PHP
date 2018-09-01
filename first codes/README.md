@@ -171,7 +171,7 @@ The word isograms, however, is not an isogram, because the s repeats.
 
 ```php
 echo isIsogram('duplicates');//=> true
-echo (isIsogram('eleven');//=> false
+echo isIsogram('eleven');//=> false
 echo isIsogram('subdermatoglyphic');//=> true
 echo isIsogram('Alphabet');//=> false
 echo isIsogram('thumbscrew-japingly');//=> true
@@ -179,7 +179,7 @@ echo isIsogram('Hjelmqvist-Gryb-Zock-Pfund-Wax');//=> true
 echo isIsogram('Heizölrückstoßabdämpfung');//=> true
 echo isIsogram('the quick brown fox');//=> false
 echo isIsogram('Emily Jung Schwartzkopf');//=> true
-echo isIsogram('éléphant');//=> false
+echo isIsogram('elephant');//=> false
 
 ```
 ## Tarefas
