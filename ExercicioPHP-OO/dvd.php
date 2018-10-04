@@ -1,34 +1,20 @@
 <?php
-class DVD extends Produto{
-    private $titulo;
+include_once('Produto.php');
+include_once('InformacaoNulaException.php');
+include_once('Logger.php');
+class DVD extends Produto {
     private $ano;
 
-    function __construct(int $cod, float $preco, String $tit, int $ano){
-        $parent::__construct($cod, $preco);
-        $this->titulo = $tit;
+    function __construct(String $nome, String $ano, String $cod, float $preco ){
+        if($ano == null){
+            throw new InformacaoNulaException("o parametro ano esta nulo");
+        }
+        parent::__construct($nome, $cod, $preco);
         $this->ano = $ano;
+        $this->exibeMensagem("a classe ".__CLASS__." foi criada");
     }
-
-    function  getCodigo() :int{
-        return $this->codigo;
-    }
-    function getPreco() :float{
-        return $this->preco;
-    }
-    function setCodigo(int $cod){
-        $this->codigo = $cod;
-    }
-    function setPreco(float $p){
-        $this->preco = $p;
-    }
-    function  getTitulo() :String{
-        return $this->titulo;
-    }
-    function getAno() :int{
+    function getAno( ){
         return $this->ano;
-    }
-    function setTitulo(int $tit){
-        $this->titulo = $tit;
     }
     function setAno(float $a){
         $this->ano = $a;

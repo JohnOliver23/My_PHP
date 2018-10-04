@@ -1,13 +1,22 @@
 <?php
+include_once('Produto.php');
+include_once('Perecivel.php');
+include_once('InformacaoNulaException.php');
+include_once('Logger.php');
 class Leite extends Produto implements Perecivel{
-    private $marca;
     private $volume;
     private $dataValidade;
-    function __construct(int $cod, float $preco, String $marca, int $volume, String $dtValidade ){
-        parent::__construct($cod, $preco);
-        $this->marca = $marca;
+    function __construct(String $nome, String $volume, $dtValidade, String $cod, float $preco){
+        if($volume == null){
+            throw new InformacaoNulaException("o parametro volume esta nulo");
+        }
+        if($dtValidade == null){
+            throw new InformacaoNulaException("o parametro data validade está nulo");
+        }
+        parent::__construct($nome, $cod, $preco);
         $this->volume = $volume;
-        $this->dataValidade = $dtValidade;
+        $this->dataValidade = new DateTime($dtValidade);
+        $this->exibeMensagem("a classe ". __CLASS__ ." foi criada");
     }
     function  getCodigo() :int{
         return $this->codigo;
@@ -21,9 +30,6 @@ class Leite extends Produto implements Perecivel{
     function setPreco(float $p){
         $this->preco = $p;
     }
-    function  getMarca() :String{
-        return $this->marca;
-    }
     function getVolume() :int{
         return $this->volume;
     }
@@ -31,9 +37,6 @@ class Leite extends Produto implements Perecivel{
         return $this->dataValidade;
     }
     
-    function setMarca(int $marca){
-        $this->marca = $marca;
-    }
     function setVolume(float $v){
         $this->volume = $v;
     }
@@ -41,10 +44,12 @@ class Leite extends Produto implements Perecivel{
         $this->dataValidade = $dt;
     }
     public function estaVencido(): bool{
-        if($this->dataValidade != "05/07/2018" ){
-            return true;
-        }
-        return false;
+        $atual = new DateTime();
+        if ($atual < $this->dataValidade)
+            return False;
+        else
+            return True;
     }
+    
 
 }
