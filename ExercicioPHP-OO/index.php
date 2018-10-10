@@ -1,6 +1,6 @@
 <?php
 include_once('Leite.php');
-include_once('DVD.php');
+include_once('dvd.php');
 $estoque = [
     1 => new Leite('Parmalate', '18ml', '10-08-2017', '001', 10.0),
     2 => new Leite('Nestle', '100ml', '15-05-2018', '002', 19.0),
@@ -13,12 +13,12 @@ $estoque = [
     9 => new DVD('Interestelar','2015', '009', 1.5),
     10 => new DVD('Homem Aranha', '2018', '010', 20.5),
 ];
-foreach ($estoque as $produtos) 
-{
-    if ($produtos instanceof Leite) {
-        if($produtos->estaVencido()){
-            print_r($produtos->getNome().'<br>');
-        }
+
+foreach ($estoque as $key => $objeto) {
+    if($objeto instanceof Leite){
+        echo $objeto->__toString();
     }
+ 
 }
+
 ?>

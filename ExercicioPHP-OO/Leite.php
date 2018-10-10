@@ -18,7 +18,7 @@ class Leite extends Produto implements Perecivel{
         $this->dataValidade = new DateTime($dtValidade);
         $this->exibeMensagem("a classe ". __CLASS__ ." foi criada");
     }
-    function  getCodigo() :int{
+    public function  getCodigo() :int{
         return $this->codigo;
     }
     function getPreco() :float{
@@ -50,6 +50,11 @@ class Leite extends Produto implements Perecivel{
         else
             return True;
     }
-    
+    public function __toString(){
+        //$cod = parent::getCodigo();
+        $nome = parent::getNome();
+        $preco = parent::getPreco();
+        echo "codigo = $cod nome = $nome preco = $preco volume= $this->volume";
+    }
 
 }
