@@ -21,20 +21,21 @@ abstract class Produto{
         $this->preco = $preco;
         
     }
+    public function getCodigo()
+    {
+       return $this->codigo;
+    }
+   public function getPreco()
+   {
+       return $this->preco;
+   }
+   function setCodigo(int $cod){
+       $this->codigo = $cod;
+   }
+   function setPreco(float $p){
+       $this->preco = $p;
+   }
 }
-function  getCodigo()
- {
-    return $this->codigo;
- }
-function getPreco()
-{
-    return $this->preco;
-}
-function setCodigo(int $cod){
-    $this->codigo = $cod;
-}
-function setPreco(float $p){
-    $this->preco = $p;
-}
+
 
 ?>

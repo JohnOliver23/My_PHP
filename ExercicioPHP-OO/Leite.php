@@ -51,10 +51,11 @@ class Leite extends Produto implements Perecivel{
             return True;
     }
     public function __toString(){
-        //$cod = parent::getCodigo();
+        $cod = parent::getCodigo();
         $nome = parent::getNome();
         $preco = parent::getPreco();
-        echo "codigo = $cod nome = $nome preco = $preco volume= $this->volume";
+        $dataFormat = $this->dataValidade->format('Y-m-d');
+        echo("codigo = $cod nome = $nome preco = $preco volume= $this->volume data = $dataFormat ");
     }
 
 }

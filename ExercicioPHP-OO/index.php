@@ -17,6 +17,11 @@ $estoque = [
 foreach ($estoque as $key => $objeto) {
     if($objeto instanceof Leite){
         echo $objeto->__toString();
+        if($objeto->estaVencido()){
+            echo " está vencido<br>";
+        }else{
+            echo " não está vencido<br>";
+        }
     }
  
 }
