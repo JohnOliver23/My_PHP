@@ -1,8 +1,5 @@
 <?php
-include_once('Produto.php');
-include_once('Perecivel.php');
-include_once('InformacaoNulaException.php');
-include_once('Logger.php');
+
 class Leite extends Produto implements Perecivel{
     private $volume;
     private $dataValidade;

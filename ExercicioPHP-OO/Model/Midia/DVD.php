@@ -1,7 +1,6 @@
 <?php
-include_once('Produto.php');
-include_once('InformacaoNulaException.php');
-include_once('Logger.php');
+include_once('autoload.php');
+
 class DVD extends Produto {
     private $ano;
 

@@ -1,6 +1,5 @@
 <?php
-include_once('Nomeavel.php');
-include_once('Logger.php');
+
 abstract class Produto{
     use Nomeavel, Logger;
     private $codigo;
