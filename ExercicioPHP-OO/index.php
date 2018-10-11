@@ -1,5 +1,5 @@
 <?php
-include_once('autoload.php');
+include_once('autoloadByNameSpace.php');
 $estoque = [
     1 => new Leite('Parmalate', '18ml', '10-08-2017', '001', 10.0),
     2 => new Leite('Nestle', '100ml', '15-05-2018', '002', 19.0),
