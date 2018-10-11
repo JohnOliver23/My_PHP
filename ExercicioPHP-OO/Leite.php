@@ -21,9 +21,7 @@ class Leite extends Produto implements Perecivel{
     public function  getCodigo() :int{
         return $this->codigo;
     }
-    function getPreco() :float{
-        return $this->preco;
-    }
+    
     function setCodigo(int $cod){
         $this->codigo = $cod;
     }

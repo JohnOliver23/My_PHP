@@ -19,5 +19,11 @@ class DVD extends Produto {
     function setAno(float $a){
         $this->ano = $a;
     }
+    function __toString(){
+        $nome = parent::getNome();
+        $cod = parent::getCodigo();
+        $preco = parent::getPreco();
+        echo "codigo = $cod, nome = $nome, preco = $preco ano = $this->ano <br>";
+    }
     
 }
