@@ -1,6 +1,7 @@
 <?php
+namespace Model;
 
-class Leite extends Produto implements Perecivel{
+class Leite extends Produto implements \Model\Interfaces\Perecivel{
     private $volume;
     private $dataValidade;
     function __construct(String $nome, String $volume, $dtValidade, String $cod, float $preco){
@@ -12,7 +13,7 @@ class Leite extends Produto implements Perecivel{
         }
         parent::__construct($nome, $cod, $preco);
         $this->volume = $volume;
-        $this->dataValidade = new DateTime($dtValidade);
+        $this->dataValidade = new \DateTime($dtValidade);
         $this->exibeMensagem("a classe ". __CLASS__ ." foi criada");
     }
     public function  getCodigo() :int{
@@ -39,7 +40,7 @@ class Leite extends Produto implements Perecivel{
         $this->dataValidade = $dt;
     }
     public function estaVencido(): bool{
-        $atual = new DateTime();
+        $atual = new \DateTime();
         if ($atual < $this->dataValidade)
             return False;
         else

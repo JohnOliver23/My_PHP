@@ -1,7 +1,6 @@
 <?php
-include_once('autoload.php');
-
-class DVD extends Produto {
+namespace Model\Midia;
+class DVD extends \Model\Produto {
     private $ano;
 
     function __construct(String $nome, String $ano, String $cod, float $preco ){

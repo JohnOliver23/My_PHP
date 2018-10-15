@@ -1,4 +1,5 @@
 <?php
+namespace Model\Tretas;
 trait Nomeavel{
     private $nome;
     /**

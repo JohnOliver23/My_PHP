@@ -1,21 +1,21 @@
 <?php
 namespace Model;
 
-spl_autoload_register(function($classe){
-   $dir = __NAMESPACE__."/".$classe.".php";
-   if(!file_exists($dir)){
-    foreach (scandir(__NAMESPACE__) as $key => $value) {
-        $dir = __NAMESPACE__."/$value/$classe.php";
-        if(file_exists($dir)){
-            echo "incluindo $dir <br>";
-            include_once($dir);
-        }
-    };  
-   }else{
-    echo "incluindo $dir <br>";
-    include_once($dir);
-   }
-});
+spl_autoload_register(
+    function($classe){
+        
+        echo "o interpretador1 está a procura da classe $classe em ";
+        $filename = "$classe.php";
+        
+        $path = __DIR__ . '/' . preg_replace("/\\\/","/",$filename);
+        echo "$path<br>";
+
+        $realpath = realpath($path);
+
+        if(file_exists($realpath))
+            include_once($realpath);
+    }
+);
 
 
 ?>

@@ -1,7 +1,7 @@
 <?php
-
+namespace Model;
 abstract class Produto{
-    use Nomeavel, Logger;
+    use \Model\Tretas\Nomeavel, \Model\Tretas\Logger;
     private $codigo;
     private $preco;
 
