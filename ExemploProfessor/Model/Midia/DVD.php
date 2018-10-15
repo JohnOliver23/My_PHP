@@ -1,5 +1,5 @@
 <?php
-
+namespace Model\Midia;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,7 +11,7 @@
  *
  * @author 2420625
  */
-class DVD extends Produto
+class DVD extends \Model\Produto
 {
     private $anoLancamento;
     function __construct(string $codigo, string $nome, string $anoLancamento) {

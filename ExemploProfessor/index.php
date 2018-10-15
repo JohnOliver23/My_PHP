@@ -11,7 +11,8 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-            include_once 'autoload.php';
+            use Model\Midia\DVD;
+            include_once 'autoloadByNameSpace.php';
             $dvd = new DVD('1', 'Ana ao Vivo',time());
             echo 'Nome:'.$dvd->getNome();
         ?>

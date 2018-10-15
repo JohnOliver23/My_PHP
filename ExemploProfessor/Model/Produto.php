@@ -1,5 +1,5 @@
 <?php
-
+namespace Model;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -13,7 +13,7 @@
  */
 abstract class Produto {
     private $codigo;
-    use Logger,Nomeavel;
+    use \Tretas\Logger,\Tretas\Nomeavel;
     
     function __construct(string $codigo, string $nome) {
         $this->codigo = $codigo;    
