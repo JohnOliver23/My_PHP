@@ -1,7 +1,7 @@
 <?php
 namespace Model;
 
-class Leite extends Produto implements \Model\Interfaces\Perecivel{
+class Leite extends \Model\Produto implements \Model\Interfaces\Perecivel{
     private $volume;
     private $dataValidade;
     function __construct(String $nome, String $volume, $dtValidade, String $cod, float $preco){
