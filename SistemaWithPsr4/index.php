@@ -1,6 +1,6 @@
 <?php
-include_once('autoload.php');
-use \Sistema\Model\Midia\DVD, Sistema\Model\Laticinio\Leite;
+include_once('vendor/autoload.php');
+use \App\Model\Midia\DVD, \App\Model\Laticinio\Leite;
 try{
     $estoque = [
         1 => new Leite("parmalate", '18ml', '10-08-2017', '001', 10.0),
