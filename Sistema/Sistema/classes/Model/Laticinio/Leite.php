@@ -1,7 +1,7 @@
 <?php
-namespace Sistema\Model\Laticinio;
+namespace App\Model\Laticinio;
 
-class Leite extends \Sistema\Model\Produto implements \Sistema\Model\Perecivel{
+class Leite extends \App\Model\Produto implements \App\Model\Perecivel{
     private $volume;
     private $dataValidade;
     function __construct($nome, String $volume, $dtValidade, String $cod, float $preco){
@@ -51,7 +51,7 @@ class Leite extends \Sistema\Model\Produto implements \Sistema\Model\Perecivel{
         $nome = parent::getNome();
         $preco = parent::getPreco();
         $dataFormat = $this->dataValidade->format('Y-m-d');
-        echo("codigo = $cod nome = $nome preco = $preco volume= $this->volume data = $dataFormat ");
+        return "codigo = $cod nome = $nome preco = $preco volume= $this->volume data = $dataFormat ";
     }
 
 }

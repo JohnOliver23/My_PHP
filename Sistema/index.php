@@ -1,6 +1,6 @@
 <?php
-include_once('autoload.php');
-use \Sistema\Model\Midia\DVD, Sistema\Model\Laticinio\Leite;
+include_once('vendor/autoload.php');
+use \App\Model\Midia\DVD, \App\Model\Laticinio\Leite;
 try{
     $estoque = [
         1 => new Leite("parmalate", '18ml', '10-08-2017', '001', 10.0),
@@ -22,7 +22,7 @@ $precos = [];
 
 foreach ($estoque as $key => $objeto) {
     if($objeto instanceof Leite){
-        echo $objeto->__toString();
+        echo $objeto;
         if($objeto->estaVencido()){
             echo " está vencido<br>";
         }else{
@@ -34,7 +34,7 @@ foreach ($estoque as $key => $objeto) {
     echo "<br>Listando os dvds do ano 2016<br>";
     foreach ($estoque as $key => $objeto) {
         if($objeto instanceof DVD && $objeto->getAno()== 2016){
-            echo $objeto->__toString();
+            echo $objeto;
         }
     }
     echo "<br> o valor total dos produtos do estoque é ";

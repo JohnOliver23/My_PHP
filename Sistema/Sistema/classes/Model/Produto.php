@@ -1,8 +1,8 @@
 <?php
-namespace Sistema\Model;
-use \Sistema\Excecao\InformacaoNulaException;
+namespace App\Model;
+use \App\Excecao\InformacaoNulaException;
 abstract class Produto{
-    use \Sistema\Traits\Nomeavel, \Sistema\Traits\Logger;
+    use \App\Traits\Nomeavel, \App\Traits\Logger;
     private $codigo;
     private $preco;
 

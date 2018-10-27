@@ -1,6 +1,6 @@
 <?php
-namespace Sistema\Model\Midia;
-use \Sistema\Model\Produto;
+namespace App\Model\Midia;
+use \App\Model\Produto;
 class DVD extends Produto {
     private $ano;
 
@@ -22,7 +22,7 @@ class DVD extends Produto {
         $nome = parent::getNome();
         $cod = parent::getCodigo();
         $preco = parent::getPreco();
-        echo "codigo = $cod, nome = $nome, preco = $preco ano = $this->ano <br>";
+        return "codigo = $cod, nome = $nome, preco = $preco ano = $this->ano <br>";
     }
     
 }
