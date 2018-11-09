@@ -12,17 +12,13 @@
  
    <div class="box">
     <form method='post' action="">
-    Nome: <input type="text" name="nome" id="nome">
+    <p>Digite seu Nome: <input type="text" name="nome" id="nome"></p>
+    <p>Qual seu sexo ?</p>
     <div class="form-check">
-         <!--
           <input class="form-check-input" type="radio" name="genero" id="f" value="m" checked>
-          <label class="form-check-label" for="gridRadios1">-->
-          <input type="checkbox" name="esportes[]" value="nat" />natacao
-          <input type="checkbox" name="esportes[]" value="fut" />futebol
+          <label class="form-check-label" for="gridRadios1">
             <p>M</p>
           </label>
-        </div>
-        <div class="form-check">
           <input class="form-check-input" type="radio" name="genero" id="m" value="f">
           <label class="form-check-label" for="gridRadios2">
            <p>F</p>
@@ -33,19 +29,14 @@
     <?php
     if(isset($_POST['nome'])){
         echo "$_POST[nome], sexo: ";
-        /*
         if($_POST['genero'] == 'm'){
             echo "masculino";
         }else{
             echo "feminino";
-        }*/
-            foreach ($_POST['esportes'] as $key => $value) {
-                echo" $value ";
-            }
+        }
             
 
     }
-
     ?>
    </div>
 </body>

@@ -28,14 +28,15 @@
   <fieldset class="formulario">
     <form action="" method="get" class="col s12">
           <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s2">
                     <i class="material-icons prefix">movie</i>
-                    <input type="text" name ="genero" id="autocomplete-input" class="autocomplete" value='<?= isset($_GET['genero'])?$_GET['genero']:""?>' maxlength="12" required autofocus>
+                    <input type="text" name ="genero" id="autocomplete-input" class="autocomplete" value='<?= isset($_GET['genero'])?$_GET['genero']:""?>'  required autofocus>
                     <!--<label for="autocomplete-input">Autocomplete</label>-->
-                </div>
                     <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                     <i class="material-icons right">send</i>
                     </button>
+                </div>
+
           </div>
     </form>
     
