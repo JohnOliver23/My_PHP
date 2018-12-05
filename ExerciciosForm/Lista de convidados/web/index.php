@@ -8,6 +8,9 @@
       <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
 </head>
 <body>
@@ -27,7 +30,7 @@
             <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
                 <input type="text" name="nome" id="nome" maxlength="40" required autofocus>
-                <!--<label for="nome">Nome do Cliente</label>-->
+                <label for="nome">Nome do Cliente</label>
             </div>
 
             <!--Campo Sexo -->
