@@ -19,6 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/deletecli/{name}','clienteController@delete');
+Route::get('/updatecli/{id}','clienteController@atualiza');
+Route::post('/update','clienteController@update')->name('update');
 Route::group(['prefix'=>'clientes'], function(){
     Route::get('/','clienteController@index');
     Route::post('/','clienteController@add');

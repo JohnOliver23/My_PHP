@@ -39,7 +39,7 @@ use Illuminate\Support\Facades\Input;
                 <td>{{$v['nome']}}</td>
                 <td>{{$v['email']}}</td>
                 <td>{{$v['telefone']}}</td>
-                <td> <a title="update" href="#" class="modal-trigger"><i class="small material-icons">note_add</i></a></td>
+                <td> <a title="update" href="{{URL::to('/updatecli/'.$v['id']) }}" class="modal-trigger"><i class="small material-icons">note_add</i></a></td>
                 <td> <a title="delete" href="{{URL::to('/deletecli/'.$v['nome']) }}" class="modal-trigger"><i class="small material-icons">delete_forever</i></a></td>
               </tr>
             @endforeach
